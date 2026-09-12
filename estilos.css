@@ -1,0 +1,4 @@
+.contenedorfoto {flex: 1 1 220px;}
+.cards {display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 60px;}
+
+.card {padding: 60px; border: 1px solid #880101; border-radius: 8px; height: 300px;}
