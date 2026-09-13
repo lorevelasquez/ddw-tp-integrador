@@ -1,4 +1,13 @@
-.contenedorfoto {flex: 1 1 220px;}
-.cards {display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 60px;}
+/* REGLA UNIVERSAL */
+* {margin: 0; padding: 0;}
 
-.card {padding: 60px; border: 1px solid #880101; border-radius: 8px; height: 300px;}
+/* REGLAS PARA CLASES */
+.contenedorfoto {flex: 1 1 220px;}
+.cards {display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 60px; margin-left: 10px;margin-right: 10px; border: 1px solid #000000; padding: 20px; border-width: 2px;}
+
+.card {padding: 60px; border: 1px solid #000000; border-radius: 8px; height: 300px; border-width: 2px;}
+
+/* REGLAS PARA ID */
+#pesto {background-image: url('ImagenesRecetas/fideosconpesto.jpg');background-repeat: round;}
+#pollocurry {background-image: url('ImagenesRecetas/polloalcurry.jpg');background-repeat: round;}
+#ensaladaatunypalta {background-image: url('ImagenesRecetas/atunypaltasalad.jpg');background-repeat: round;}
