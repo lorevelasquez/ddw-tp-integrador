@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>Cocina y Sabor</title>
 <!-- FUENTES -->
 <style> /* Fuente del nombre de las recetas */
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap');
@@ -15,35 +15,42 @@
 </head>
 <body>
 
-      <header>
-        <div class="inicio-logo">
+      <header id="inicio">
+        <div class="inicio-logo" >
           <img src="img/logo_food.png" alt="logo de bandeja de comida" class="logo">
-          <h1>Mesa y Sabor</h1>
+          <a href="#inicio" class="logo-link">
+            <h1>Cocina y Sabor</h1>
+          </a>
         </div>
         
         <nav>  <!-- menú con flexbox, links a anclas -->
           <ul>
-            <li><a href="#Inicio">Home</a></li>
-            <li><a href="#Nosotros">Nosotros</a></li>
-            <li><a href="#Recetas">Recetas</a></li>
-            <li><a href="#Favoritos">Favoritos</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#favoritos">Favoritos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <section id="inicio" class="hero">       
+        <section class="hero">       
           <div class="hero_texto">
-            <h2>Recetas para el hogar</h2>
-            <p>Recetas paso a paso, para todos los días</p>
+            <h2>Un plato distinto cada día</h2>
+            <p>Recetas simples y variadas, para cocinar en casa sin complicarte</p>
           </div>
         </section>
 
         <section id="nosotros">
+          <div class="nosotros-contenedor">
+            <h2 class="titulo-seccion titulo-seccion-dark">Sobre Nosotros</h2>
+            <p class="nosotros-texto">Nada de ingredientes raros ni procesos eternos: platos rápidos para esos días de semana ajustados, y alguna receta con más onda para cuando hay tiempo de sobra el fin de semana. Buscamos que cocinar sea simple, con ingredientes fáciles de conseguir y pasos que realmente se entiendan, sin vueltas. El objetivo es que termines con un plato rico en la mesa, no agotada de tanto leer instrucciones.
+            </p>
+          </div>
         </section>
 
-        <section class="cards"> <!-- Contenedor de las tarjetas de recetas -->
+        <section class="cards" id="recetas"> <!-- Contenedor de las tarjetas de recetas -->
 
           <div class="titulo-seccion-contenedor">
             <h2 class="titulo-seccion">Recetas del día</h2>
