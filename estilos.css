@@ -1,0 +1,38 @@
+/* ----- HEADER ----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.inicio-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.logo {
+    color: #51e58c;
+    width: 40px;
+    height: 40px;
+}
+
+/* ----- HERO ----- */
+.hero {
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
