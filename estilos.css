@@ -1,0 +1,144 @@
+/* REGLA UNIVERSAL */
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #0d0d0d;
+    border-bottom: 2px solid #837f7f;
+}
+
+.inicio-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header h1 {
+    font-family: 'Lilita One', sans-serif;
+    color: #ffffff;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #51e58c;
+}
+
+/* ----- HERO ----- */
+.hero {
+  background-image: linear-gradient(rgba(13,13,13,0.75), rgba(13,13,13,0.75)), url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid #837f7f;
+}
+
+.hero_texto h2 {
+    font-family: 'Salsa', 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hero_texto p {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+/* REGLAS PARA CLASES */
+.cards {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 12px; 
+    margin-top: 60px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-bottom: 60px; 
+    border: 1px solid #837f7f; 
+    background-color: #0d0d0d; 
+    padding: 20px; 
+    border-width: 2px; 
+    height: 700px;} /* El justify-content: flex-start - Ubica los hijos en el eje principal, en este caso en lo más alto de la columna porque se estableció flex direction column */
+
+.titulo-seccion-contenedor {
+    width: 100%;
+}
+
+.Galeriafotos {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 12px; 
+    align-items: center;
+} /* Allign-items: center en este caso alinea verticalmente card e imagen de la galería aunque tengan distinta altura */
+
+.contenedorfoto {
+    flex: 1 1 0; 
+    min-width: 0;
+}
+
+.card {
+    border: 1px solid #dbd9d9; 
+    border-radius: 8px; 
+    height: 300px; 
+    border-width: 2px; 
+    background-size: cover;
+}
+
+.nombre-receta {color: #ffffff; 
+    text-align: center; 
+    font-family: 'Lilita One', 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+    margin-top: 10px;}
+
+.titulo-seccion {color: #ffffff; 
+    text-align: center; 
+    font-family: 'Salsa', 'Times New Roman', Times, serif; 
+    font-size: 28px; margin-top: 0;}
+
+/* REGLAS PARA ID */
+#pesto {
+    background-image: url('img/fideosconpesto.jpg');
+}
+
+#pollocurry {
+    background-image: url('img/polloalcurry.jpg');
+}
+
+#ensaladaatunypalta {
+    background-image: url('img/atunypaltasalad.jpg');
+}
+
+#ClubSandwich {
+    background-image: url('img/Clubsandwich.jpg');
+}

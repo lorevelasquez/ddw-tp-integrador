@@ -5,30 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
+<!-- FUENTES -->
+<style> /* Fuente del nombre de las recetas */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap');
+</style>
+<style> /* Fuente del título de la sección */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&family=Salsa&display=swap');
+</style>
 </head>
 <body>
-    <div class="contenedor">
 
       <header>
+        <div class="inicio-logo">
+          <img src="img/logo_food.png" alt="logo de bandeja de comida" class="logo">
+          <h1>Mesa y Sabor</h1>
+        </div>
+        
         <nav>  <!-- menú con flexbox, links a anclas -->
+          <ul>
+            <li><a href="#Inicio">Home</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Recetas">Recetas</a></li>
+            <li><a href="#Favoritos">Favoritos</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main>
-
-        <section id="inicio">       
+        <section id="inicio" class="hero">       
+          <div class="hero_texto">
+            <h2>Recetas para el hogar</h2>
+            <p>Recetas paso a paso, para todos los días</p>
+          </div>
+        </section>
 
         <section id="nosotros">
+        </section>
 
-        <section id="recetas">       <!-- cards -->
+        <section class="cards"> <!-- Contenedor de las tarjetas de recetas -->
 
-        <section id="galeria">       <!-- 4 imagenes minimo -->
+          <div class="titulo-seccion-contenedor">
+            <h2 class="titulo-seccion">Recetas del día</h2>
+          </div>
 
-        <section id="contacto">      <!-- Datos / mapa / mailto --> 
-    
+          <div class="Galeriafotos">
+            <figure class="contenedorfoto">
+              <a href="https://cookpad.com/ar/recetas/1634695" target="_blank">
+              <article class="card" id="pesto"></article> </a>
+              <figcaption class="nombre-receta">Fideos con Pesto</figcaption>
+            </figure>
+
+            <figure class="contenedorfoto">
+              <a href="https://cookpad.com/ar/recetas/24913123?ref=search&search_term=pollo+al+curry" target="_blank">
+              <article class="card" id="pollocurry"></article></a>
+              <figcaption class="nombre-receta">Pollo al Curry</figcaption>
+            </figure>
+
+            <figure class="contenedorfoto">
+              <a href="https://cookpad.com/ar/recetas/25136195?ref=search&search_term=ensalada+at%C3%BAn+y+palta" target="_blank">
+              <article class="card" id="ensaladaatunypalta"></article></a>
+              <figcaption class="nombre-receta">Ensalada de Atún y Palta</figcaption>
+            </figure>
+
+            <figure class="contenedorfoto">
+              <a href="https://cookpad.com/ar/recetas/14427260?ref=search&search_term=club+sandwich" target="_blank">
+              <article class="card" id="ClubSandwich"></article></a>
+              <figcaption class="nombre-receta">Club Sandwich</figcaption>
+            </figure>
+          </div>
+
+        </section>
 
       </main>
 
       <footer>  <!--redes sociales / copyright--> 
+      </footer>
     
 </body>
 </html>
