@@ -5,6 +5,8 @@ Trabajo Práctico Integrador · Diseño y Desarrollo Web · UADE
 
 Sitio desarrollado con HTML5, CSS3 y Flexbox, sin JavaScript (se incorporará en el Parcial 2). Presenta recetas caseras variadas, con navegación por anclas y diseño responsive para escritorio y tablet.
 
+**Sitio publicado**: https://lorevelasquez.github.io/ddw-tp-integrador/
+
 ---
 
 ## Secciones del sitio
@@ -33,7 +35,17 @@ Ver detalle completo en [`integrantes.txt`](./integrantes.txt).
 - Mozilla Firefox
 
 ## Horas aproximadas
-*(Completar)*
+
+- **Estructura HTML y contenido**: ~6 horas
+- **Diseño y estilos CSS**: ~7 horas
+- **Integración de ramas y uso de GitHub**: ~5 horas
+
+**Total aproximado**: ~18 horas (repartidas entre los 3 integrantes)
 
 ## Validación W3C
-*(Link o captura de la validación de HTML y CSS en validator.w3.org y jigsaw.w3.org/css-validator)*
+- **HTML**: 0 errores (quedan 4 warnings menores de tipo "article lacks heading", no bloqueantes)
+![Validación HTML](./capturas/validacion_html_01.jpg)
+![Validación HTML](./capturas/validacion_html_02.jpg)
+
+- **CSS**: 0 errores, CSS3 válido
+![Validación CSS](./capturas/validacion_css.jpg)
