@@ -125,7 +125,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.Galeriafotos {
+.Productofotos  {
     display: flex; 
     flex-wrap: nowrap; 
     gap: 12px; 
@@ -156,6 +156,14 @@ nav ul li a:hover {
     text-align: center; 
     font-family: 'Salsa', 'Times New Roman', Times, serif; 
     font-size: 28px; margin-top: 0;}
+
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
 
 /* REGLAS PARA ID */
 #pesto {
