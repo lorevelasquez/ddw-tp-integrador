@@ -2,18 +2,17 @@
 
 Trabajo Práctico Integrador · Diseño y Desarrollo Web · UADE
 
-Sitio desarrollado con HTML5, CSS3 y Flexbox, sin JavaScript (se incorporará en el Parcial 2). Presenta recetas caseras y/o restaurantes recomendados, con navegación por anclas y diseño responsive para escritorio y tablet.
+Sitio desarrollado con HTML5, CSS3 y Flexbox, sin JavaScript (se incorporará en el Parcial 2). Presenta recetas caseras variadas, con navegación por anclas y diseño responsive para escritorio y tablet.
 
 ---
 
 ## Secciones del sitio
-*(Completar al definir el contenido final)*
 
-- **Inicio** — presentación del sitio, imagen o banner.
-- **Nosotros** — texto institucional o de la propuesta.
-- **Recetas / Restaurantes** — al menos 3 ítems presentados en cards.
-- **Galería** — al menos 4 imágenes destacadas.
-- **Contacto** — datos de contacto y mapa embebido o botón mailto.
+- **Inicio** — header con logo y menú de navegación, seguido de un hero con imagen de fondo y presentación del sitio.
+- **Nosotros** — texto sobre la propuesta de Cocina y Sabor.
+- **Recetas** — 4 recetas presentadas en cards, con link a la receta completa.
+- **Galería** — fotos de utensilios e ingredientes.
+- **Contacto** — dentro del footer, con datos de contacto y redes sociales.
 
 ## Tecnologías utilizadas
 - HTML5 semántico
@@ -28,7 +27,9 @@ Ver detalle completo en [`integrantes.txt`](./integrantes.txt).
 - Velasquez, Lorena Isabel - Comisión: Viernes Noche - lvelasquez@uade.edu.ar
 
 ## Navegadores probados
-*(Completar)*
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
 ## Horas aproximadas
 *(Completar)*
