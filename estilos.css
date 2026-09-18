@@ -51,7 +51,7 @@ nav ul li a {
     font-family: 'Oswald', sans-serif;
 }
 
-nav ul li a:hover {
+nav ul li a:hover {    /* :hover permite que al pasar el mouse sobre el elemento, este genera una reaccion*/
     color: #51e58c;
 }
 
@@ -180,6 +180,18 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
+.galeria-fotos img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #dbd9d9;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05); /* permite que al pasar el mouse por la imagen, de un efecto de movimiento */
+}
+
 /* REGLAS PARA ID */
 #pesto {
     background-image: url('img/fideosconpesto.jpg');
@@ -206,7 +218,7 @@ footer {
     border-top: 10px solid #ffffff;
 }
 
-.footer-contenido {
+.footer-contenido { /*buscamos que todo el footer este contenido en el centro para que no se pierda en un costado o quede desacomodado entre las imagenes y el texto*/
     display: flex;
     flex-direction: column;
     align-items: center;
