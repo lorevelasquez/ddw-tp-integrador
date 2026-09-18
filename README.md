@@ -1,4 +1,5 @@
-# Sitio de Recetas y Restaurantes
+# Sitio de Recetas
+## Cocina y Sabor
 
 Trabajo Práctico Integrador · Diseño y Desarrollo Web · UADE
 
