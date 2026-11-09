@@ -127,6 +127,14 @@ nav ul li a:hover {    /* :hover permite que al pasar el mouse sobre el elemento
     width: 100%;
 }
 
+#recetas .titulo-seccion-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .Productofotos  {
     display: flex; 
     flex-wrap: nowrap; 
@@ -135,8 +143,10 @@ nav ul li a:hover {    /* :hover permite que al pasar el mouse sobre el elemento
 } /* Allign-items: center en este caso alinea verticalmente card e imagen de la galería aunque tengan distinta altura */
 
 .contenedorfoto {
-    flex: 1 1 0; 
+    flex: 1 1 0;
     min-width: 0;
+    max-width: 23%;
+    position: relative;
 }
 
 .card {
@@ -249,7 +259,50 @@ footer {
 }
 
 .volver-arriba:hover {
-    
+
     color: #51e58c;
+}
+
+/* FAVORITOS */
+
+.btn-favorito {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(13, 13, 13, 0.55);
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-favorito:hover {
+    background-color: rgba(13, 13, 13, 0.8);
+}
+
+.btn-filtro-favoritas {
+    flex-shrink: 0;
+    border: 2px solid #51e58c;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #51e58c;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-filtro-favoritas:hover {
+    background-color: #51e58c;
+    color: #0d0d0d;
 }
 

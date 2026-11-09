@@ -74,3 +74,101 @@ function renderizarRecetas() {
 
 renderizarRecetas();
 renderizarGaleria();
+
+//FAVORITOS (localStorage)
+
+const CLAVE_FAVORITOS = "cocinaysabor_favoritos";
+
+// lee del localStorage los ids guardados como favoritos
+// si todavia no hay nada guardado, devuelve un array vacío
+function cargarFavoritos() {
+    const guardado = localStorage.getItem(CLAVE_FAVORITOS);
+    if (guardado === null) {
+        return [];
+    }
+    return JSON.parse(guardado);
+}
+
+// guarda el array de favoritos actual en localStorage
+function guardarFavoritos() {
+    localStorage.setItem(CLAVE_FAVORITOS, JSON.stringify(favoritos));
+}
+
+// deja el boton con el texto y el estilo que le corresponde
+// segun si ese id esta o no en favoritos.
+function pintarBoton(boton, id) {
+    if (favoritos.indexOf(id) === -1) {
+        boton.textContent = "☆";
+        boton.style.backgroundColor = "";
+        boton.style.color = "";
+    } else {
+        boton.textContent = "★";
+        boton.style.backgroundColor = "#f6c343";
+        boton.style.color = "#0d0d0d";
+    }
+}
+
+// Agrega un boton de favorito a cada card de receta ya renderizada.
+// No toca renderizarRecetas(): trabaja sobre lo que esa funcion
+// ya dejo armado en el DOM.
+function renderizarFavoritos() {
+    for (let i = 0; i < arrRecetas.length; i++) {
+        const receta = arrRecetas[i];
+        const figure = recetasContenedor.children[i];
+
+        const btnFavorito = document.createElement("button");
+        btnFavorito.type = "button";
+        btnFavorito.classList.add("btn-favorito");
+        pintarBoton(btnFavorito, receta.id);
+
+        btnFavorito.addEventListener("click", function () {
+            if (favoritos.indexOf(receta.id) === -1) {
+                favoritos.push(receta.id);
+            } else {
+                favoritos.splice(favoritos.indexOf(receta.id), 1);
+            }
+            guardarFavoritos();
+            pintarBoton(btnFavorito, receta.id);
+            aplicarFiltroFavoritas();
+        });
+
+        figure.appendChild(btnFavorito);
+    }
+}
+
+const favoritos = cargarFavoritos();
+renderizarFavoritos();
+
+//FILTRO: VER SOLO FAVORITAS
+
+const btnFiltroFavoritas = document.getElementById("btn-filtro-favoritas");
+
+// true = en este momento se estan mostrando solo las favoritas.
+let mostrandoSoloFavoritas = false;
+
+// Recorre las cards ya renderizadas y, segun el filtro activo,
+// oculta (display: none) o muestra (display: "") cada una.
+function aplicarFiltroFavoritas() {
+    for (let i = 0; i < arrRecetas.length; i++) {
+        const receta = arrRecetas[i];
+        const figure = recetasContenedor.children[i];
+
+        if (mostrandoSoloFavoritas && favoritos.indexOf(receta.id) === -1) {
+            figure.style.display = "none";
+        } else {
+            figure.style.display = "";
+        }
+    }
+}
+
+btnFiltroFavoritas.addEventListener("click", function () {
+    mostrandoSoloFavoritas = !mostrandoSoloFavoritas;
+
+    if (mostrandoSoloFavoritas) {
+        btnFiltroFavoritas.textContent = "Ver todas";
+    } else {
+        btnFiltroFavoritas.textContent = "Ver solo favoritas";
+    }
+
+    aplicarFiltroFavoritas();
+});
