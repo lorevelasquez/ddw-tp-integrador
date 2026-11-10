@@ -26,14 +26,24 @@ Sitio desarrollado con HTML5, CSS3 y Flexbox, con JavaScript para la generación
 
 ## Entrega 2 — JavaScript
 
-Sobre la base de la Entrega 1, se incorporó:
+Sobre la base de la Entrega 1, se incorporó `js/main.js`:
 
-- **Arrays de datos**: las recetas y las fotos de la galería viven en arrays de objetos en `js/main.js`, no están escritas a mano en el HTML.
-- **Generación dinámica del DOM**: ambas secciones (recetas y galería) se arman con `createElement`/`appendChild` a partir de esos arrays.
-- **Favoritos**: un botón (★/☆) en cada card de receta para marcarla como favorita. El estado se guarda en `localStorage`, así que persiste entre visitas.
-- **Filtro**: un botón para ver solo las recetas marcadas como favoritas, o volver a verlas todas.
+- **Arrays de datos**: dos arrays de objetos, `arrRecetas` (título, imagen y url de cada receta) y `arrGaleria` (src y alt de cada foto de utensilios/ingredientes).
+- **Generación dinámica del DOM**: las cards de recetas y las fotos de la galería ya no están escritas a mano en el HTML — se arman con `createElement`/`appendChild` a partir de los dos arrays. Los contenedores en el HTML (`#recetas-contenedor` y `#galeria-contenedor`) arrancan vacíos.
+- **Favoritos**: un botón (★/☆) en la esquina de cada card de receta. Al hacer click, marca o desmarca esa receta como favorita — cambia a dorado y guarda el cambio en `localStorage`. Al recargar la página, las que estaban marcadas siguen marcadas.
+- **Filtro "Ver solo favoritas"**: un botón arriba de la grilla de recetas oculta las que no están marcadas, dejando ver solo las favoritas. Otro click vuelve a mostrarlas todas.
+- **localStorage**: las recetas marcadas se guardan con `localStorage.setItem()` (convertidas a texto con `JSON.stringify`) y se recuperan al abrir la página con `localStorage.getItem()` + `JSON.parse()`. Así la selección no se pierde al cerrar o recargar.
 
-Más detalle de cómo probar esto en [`README.txt`](./README.txt).
+### Cómo probarlo paso a paso
+
+1. Abrir `index.html` en el navegador (o entrar a la página publicada).
+2. Bajar hasta la sección "Recetas del día".
+3. Marcar 2 o 3 recetas como favoritas (click en la estrella de la esquina de cada foto). Se ponen doradas.
+4. Recargar la página (F5). Confirmar que las mismas recetas siguen marcadas con la estrella dorada.
+5. Click en el botón "Ver solo favoritas". Confirmar que solo quedan visibles las que se marcaron antes.
+6. Click en "Ver todas" (mismo botón, cambia de texto). Vuelven a verse las 4 recetas.
+7. Sacarle la estrella a alguna receta marcada, recargar de nuevo, y confirmar que esa ya no aparece como favorita.
+8. Abrir la consola del navegador (F12) y confirmar que no aparece ningún error.
 
 ## Integrantes
 Ver detalle completo en [`integrantes.txt`](./integrantes.txt).
