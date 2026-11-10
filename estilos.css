@@ -145,7 +145,7 @@ nav ul li a:hover {    /* :hover permite que al pasar el mouse sobre el elemento
 .contenedorfoto {
     flex: 1 1 0;
     min-width: 0;
-    max-width: 23%;
+    max-width: 24%;
     position: relative;
 }
 
