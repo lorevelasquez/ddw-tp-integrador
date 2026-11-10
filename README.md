@@ -3,7 +3,7 @@
 
 Trabajo Práctico Integrador · Diseño y Desarrollo Web · UADE
 
-Sitio desarrollado con HTML5, CSS3 y Flexbox, sin JavaScript (se incorporará en el Parcial 2). Presenta recetas caseras variadas, con navegación por anclas y diseño responsive para escritorio y tablet.
+Sitio desarrollado con HTML5, CSS3 y Flexbox, con JavaScript para la generación dinámica del contenido y las interacciones (ver [Entrega 2](#entrega-2--javascript) más abajo). Presenta recetas caseras variadas, con navegación por anclas y diseño responsive para escritorio y tablet.
 
 **Sitio publicado**: https://lorevelasquez.github.io/ddw-tp-integrador/
 
@@ -13,14 +13,27 @@ Sitio desarrollado con HTML5, CSS3 y Flexbox, sin JavaScript (se incorporará en
 
 - **Inicio** — header con logo y menú de navegación, seguido de un hero con imagen de fondo y presentación del sitio.
 - **Nosotros** — texto sobre la propuesta de Cocina y Sabor.
-- **Recetas** — 4 recetas presentadas en cards, con link a la receta completa.
-- **Galería** — fotos de utensilios e ingredientes.
+- **Recetas** — generadas dinámicamente desde un array de JavaScript, en cards con link a la receta completa. Cada una se puede marcar como favorita, y hay un filtro para ver solo las marcadas.
+- **Galería** — fotos de utensilios e ingredientes, también generadas desde un array de JavaScript.
 - **Contacto** — dentro del footer, con datos de contacto y redes sociales.
 
 ## Tecnologías utilizadas
 - HTML5 semántico
 - CSS3 con Flexbox
+- JavaScript (sin frameworks ni librerías)
+- localStorage para persistir los favoritos
 - Google Fonts
+
+## Entrega 2 — JavaScript
+
+Sobre la base de la Entrega 1, se incorporó:
+
+- **Arrays de datos**: las recetas y las fotos de la galería viven en arrays de objetos en `js/main.js`, no están escritas a mano en el HTML.
+- **Generación dinámica del DOM**: ambas secciones (recetas y galería) se arman con `createElement`/`appendChild` a partir de esos arrays.
+- **Favoritos**: un botón (★/☆) en cada card de receta para marcarla como favorita. El estado se guarda en `localStorage`, así que persiste entre visitas.
+- **Filtro**: un botón para ver solo las recetas marcadas como favoritas, o volver a verlas todas.
+
+Más detalle de cómo probar esto en [`README.txt`](./README.txt).
 
 ## Integrantes
 Ver detalle completo en [`integrantes.txt`](./integrantes.txt).
