@@ -65,6 +65,14 @@ Ver detalle completo en [`integrantes.txt`](./integrantes.txt).
 
 **Total aproximado**: ~18 horas (repartidas entre los 3 integrantes)
 
+## Horas aproximadas — Entrega 2 (JavaScript)
+
+- **JavaScript** (arrays, generación dinámica del DOM, eventos, localStorage): ~10 horas
+- **Ajustes de CSS**: ~2 horas
+- **Integración de ramas y uso de GitHub**: ~2 horas
+
+**Total aproximado**: ~14 horas (repartidas entre los 3 integrantes)
+
 ## Validación W3C
 - **HTML**: 0 errores (quedan 4 warnings menores de tipo "article lacks heading", no bloqueantes)
 ![Validación HTML](./capturas/validacion_html_01.jpg)
